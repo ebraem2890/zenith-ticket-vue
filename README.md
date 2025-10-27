@@ -1,24 +1,14 @@
-# zenith-ticket-vue
+# Vue + Vite for Ticket Management Application
+This is the Vue implementation of the comprehensive Ticket Management System.
 
-## Project setup
-```
-npm install
-```
+## Core Feature
+The application adheres strictly to the layout, design, and validation mandates across all screens:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Landing Page: 
+Features a hero section with a distinctive wavy background (CSS/SVG) and clear CTAs.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Authentication: 
+Simulated secure Login and Signup using localStorage for session management.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Design Consistency: 
+All content is centered with a maximum width of 1440px on large screens, utilizing decorative circles and box-shaped cards with shadows.
