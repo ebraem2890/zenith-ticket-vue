@@ -7,12 +7,17 @@
             <td>Name</td>
             <td>Contact</td>
             <td>Address</td>
+            <td>Actions</td>
         </tr>
         <tr v-for="item in ticket" :key="item.id">
             <td>{{ item.id }}</td>
             <td>{{ item.name }}</td>
             <td>{{ item.contact }}</td>
             <td>{{ item.address }}</td>
+            <td>
+                <router-link :to="'/update/' +item.id">Update</router-link>
+                <button v-on:click="deleteTicket(item.id)">Delete</button>
+            </td>
         </tr>
     </table>
     </template>
@@ -29,6 +34,13 @@ import axios from 'axios'
         },
         components: {
             HeaderTag
+        },
+        methods: {
+           async deleteTicket(id)
+            {
+                let result = await axios.delete('http://localhost:3000/tickets/'+id);
+                console.warn(result)
+            }
         },
         async mounted()
         {

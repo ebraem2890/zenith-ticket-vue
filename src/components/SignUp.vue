@@ -5,9 +5,9 @@
         <input type="text" v-model="email" placeholder="Your Email" />
         <input type="password" v-model="password"  placeholder="Your Password" />
         <button v-on:click="signUp">Sign Up</button>
-        <p>
-            <router-link class="link" to="/log-in">Login</router-link>
-        </p>
+        <div class="link">
+            <router-link to="/log-in">Login</router-link>
+        </div>
     </div>
 </template>
 <script>
@@ -36,7 +36,7 @@ export default {
               name: this.name
             })
             console.warn(result)
-            if(result.status ==200 || result.status == 201)
+            if(result.status)
             {
                 localStorage.setItem("ticketapp_session", JSON.stringify(result.data))
                 this.$router.push({name: 'HomeView'})
@@ -60,5 +60,6 @@ export default {
     margin: 10px;
     padding: 10px 40px;
     margin-left: 320px;
+    width: 100%;
 }
 </style>

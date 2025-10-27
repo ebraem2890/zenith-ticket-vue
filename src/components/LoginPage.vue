@@ -31,8 +31,16 @@
                 if(result.status==200 && result.data.length>0)
                       {
                         localStorage.setItem("ticketapp_session", JSON.stringify(result.data[0]))
-                        this.$router.push({name: 'HomeView'})
+                        const exist = result.data.some((item=> item.email===this.email));
+                        if(exist){
+                        this.$router.push({name: 'HomeView'});
+                        }else{
+                              alert("User does not exist, kindly Sign up");
+                        }
                       } 
+                      else{
+                        alert("User does not exist, kindly Sign up")
+                      }
             }
         },
         mounted()

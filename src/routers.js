@@ -35,7 +35,7 @@ const routes = [
     {
         name: 'TicketUpdate',
         component: TicketUpdate,
-        path: '/update'
+        path: '/update/:id'
     }
     
 ];

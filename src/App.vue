@@ -21,7 +21,7 @@ body{
   padding: 0;
   margin: 0;
 }
-.register input {
+.register input, .login input, .add input {
     width: 300px;
     height: 40px;
     padding-left: 20px;
@@ -31,7 +31,7 @@ body{
     margin-right: auto;
     border: 1px solid tomato;
 }
-.register button {
+.register button, .add button {
     width: 100px;
     height: 40px;
     border: none;

@@ -1,9 +1,10 @@
 <template>
     <div class="nav">
-        <h2>Zenith Ticket</h2>
+        <h2>
+            <router-link to="/">Zenith Ticket</router-link>
+        </h2>
         <router-link to="/home">Home</router-link>
         <router-link to="/create">Create Ticket</router-link>
-        <router-link to="/update">Update Ticket</router-link>
         <a v-on:click="logout" href="#">Logout</a>
     </div>
     </template>
