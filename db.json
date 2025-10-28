@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "email": "azeezat@test",
+      "name": "Azeezat Ibrahim",
+      "password": "azeezat@123",
+      "id": "b9c2"
+    },
+    {
+      "id": "4d04",
+      "email": "azeezat",
+      "password": "edezat",
+      "name": "Azeezat"
+    },
+    {
+      "id": "1",
+      "name": "concert",
+      "contact": 1111111,
+      "address": "Nigeria"
+    },
+    {
+      "id": "1",
+      "name": "concert",
+      "contact": 1111111,
+      "address": "Nigeria"
+    },
+    {
+      "id": "4555",
+      "email": "Azeezat",
+      "password": "Adedoyin",
+      "name": "Ibrahim"
+    },
+    {
+      "id": "14ac",
+      "email": "",
+      "password": "",
+      "name": ""
+    },
+    {
+      "id": "1c0d",
+      "email": "",
+      "password": "",
+      "name": ""
+    },
+    {
+      "id": "73fe",
+      "email": "",
+      "password": "",
+      "name": ""
+    },
+    {
+      "id": "4809",
+      "email": "",
+      "password": "",
+      "name": ""
+    }
+  ],
+  "tickets": [
+    {
+      "name": "Ibrahim Azeezat Adedoyin ",
+      "address": "USA",
+      "contact": "Ibrahim Azeezat Adedoyin 2",
+      "id": "8d50"
+    },
+    {
+      "id": "3eac",
+      "name": "Ibrahim Azeezat Adedoyin ",
+      "address": "Nigeria",
+      "contact": "E-commerce"
+    }
+  ]
+}
