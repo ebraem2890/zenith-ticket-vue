@@ -52,7 +52,7 @@
                 try{
                       const result = await axios.get('http://localhost:3000/tickets/'+this.$route.params.id)
               console.warn(result.data)
-            //   this.ticket=result.data
+              this.ticket=result.data
                 }catch(e){
                     //
                 }

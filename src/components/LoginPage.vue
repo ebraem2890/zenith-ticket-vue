@@ -25,10 +25,10 @@
           async login()
             {
                 let result = await axios.get(
-                    `http://localhost:3000/users?email=${this.email}& password=${this.password}`
+                    `http://localhost:3000/users?email=${this.email}&password=${this.password}`
                 )
 
-                if(result.status==200 && result.data.length>0)
+                if(result.data.length>0)
                       {
                         localStorage.setItem("ticketapp_session", JSON.stringify(result.data[0]))
                         const exist = result.data.some((item=> item.email===this.email));
