@@ -12,3 +12,9 @@ Simulated secure Login and Signup using localStorage for session management.
 
 # Design Consistency: 
 All content is centered with a maximum width of 1440px on large screens, utilizing decorative circles and box-shaped cards with shadows.
+
+## how to run locally:
+git clone https://github.com/ebraem2890/zenith-ticket-vue.git
+- host "http://localhost:3000/users" and http://localhost:3000/tickets
+- run json-server manually it to start automatically.
+use npm run serve to run it on your browser
